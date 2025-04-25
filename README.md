@@ -1,59 +1,63 @@
-# Social Network API
+# 📡 Social Network API
 
-## Description
+A backend API for a social networking app built with **Express.js**, **MongoDB**, and **Mongoose**. Designed to handle CRUD operations for users, thoughts, reactions, and friend relationships — this API powers a lightweight social platform for posting ideas, reacting to them, and staying connected. Built for assignment during University of Denver Coding Bootcamp.
 
-This project is a back-end application for a social network, allowing users to share thoughts, react to friends' thoughts, and manage their friend list.
+---
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Technologies](#technologies)
-- [License](#license)
-- [Contributing](#contributing)
-- [Questions](#questions)
+- [Tech Stack](#-tech-stack)
+- [Features](#-features)
+- [How to Use](#-how-to-use)
+- [Walkthrough Video](#-walkthrough-video)
+- [Author](#-author)
 
-## Installation
+---
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/social-network-api.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd social-network-api
-   ```
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-## Usage
-
-1. Start the server:
-   ```bash
-   npm start
-   ```
-2. Use an API client (e.g., Postman) to interact with the endpoints.
-
-## Technologies
+## Tech Stack
 
 - Node.js
 - Express.js
 - MongoDB
-- Mongoose
+- Mongoose ODM
 
-## License
+---
 
-This project is licensed under the MIT License.
+## Features
 
-## Contributing
+- Create, read, update, and delete **users** and **thoughts**
+- Add and remove **friends** from a user's friend list
+- Add and remove **reactions** (replies) to thoughts
+- Virtuals for:
+  - `friendCount` on User
+  - `reactionCount` on Thought
+- Uses subdocument schema for `reactions` (not standalone model)
+- Proper date formatting with Mongoose getters
 
-Contributions are welcome! Please fork the repository and submit a pull request.
+---
 
-## Questions
+## How to Use
 
-For any questions, please contact:
+1. Clone the repo
+2. Install dependencies `npm install`
+3. Start MongoDB `mongod --dbpath ~/your-db-path
+4. Run the server `npm run start`
+5. Test API endpoints with **Insomnia** or **Postman**
 
-- GitHub: [your-username](https://github.com/your-username)
-- Email: your-email@example.com
+---
+
+## Walkthrough Video
+
+[🔗 Click here to watch the walkthrough demo](https://your-video-link.com)
+
+> Demonstrates all technical acceptance criteria including CRUD routes, reaction/friend functionality, and proper use of Mongoose methods.
+
+---
+
+## Author
+
+**Elli McKinley**  
+Business Systems Specialist | Developer-in-Training | River Rat 🛶  
+[GitHub](https://github.com/ellimckinley) | [LinkedIn](https://linkedin.com/in/ellimckinley)
+
+---

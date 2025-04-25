@@ -1,11 +1,19 @@
-// GET for /api/users
+import { Router } from 'express';
+import userController from '../../controllers/userController.js';
 
-// POST for /api/users
+const router = Router();
 
-// PUT for /api/users
+router.route('/')
+  .get(userController.getUsers)
+  .post(userController.createUser);
 
-// DELETE for /api/users
+router.route('/:userId')
+  .get(userController.getSingleUser)
+  .put(userController.updateUser)
+  .delete(userController.deleteUser);
 
-// POST for /api/users/:userId/friends/:friendId
+router.route('/:userId/friends/:friendId')
+  .post(userController.addFriend)
+  .delete(userController.removeFriend);
 
-// DELETE for /api/users/:userId/friends/:friendId
+export default router;
