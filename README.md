@@ -10,6 +10,7 @@ A backend API for a social networking app built with **Express.js**, **MongoDB**
 - [Features](#-features)
 - [How to Use](#-how-to-use)
 - [Walkthrough Video](#-walkthrough-video)
+- [License](#-license)
 - [Author](#-author)
 
 ---
@@ -51,6 +52,12 @@ A backend API for a social networking app built with **Express.js**, **MongoDB**
 [🔗 Click here to watch the walkthrough demo](https://your-video-link.com)
 
 > Demonstrates all technical acceptance criteria including CRUD routes, reaction/friend functionality, and proper use of Mongoose methods.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ---
 
