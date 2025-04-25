@@ -49,7 +49,7 @@ A backend API for a social networking app built with **Express.js**, **MongoDB**
 
 ## Walkthrough Video
 
-[🔗 Click here to watch the walkthrough demo](https://your-video-link.com)
+[🔗 Click here to watch the walkthrough demo](https://drive.google.com/file/d/1m_ZRdUoJYvLGt12U9rN3CYt2DkPNlHbO/view?usp=drive_link)
 
 > Demonstrates all technical acceptance criteria including CRUD routes, reaction/friend functionality, and proper use of Mongoose methods.
 
