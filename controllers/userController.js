@@ -93,7 +93,7 @@ const userController = {
     // Delete remove friend
     async removeFriend(req, res) {
         try {
-            const user = await User.findByIdAndDelete(
+            const user = await User.findByIdAndUpdate(
                 req.params.userId,
                 { $pull: { friends: req.params.friendId } },
                 { new: true}
